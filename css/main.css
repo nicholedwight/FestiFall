@@ -12,7 +12,7 @@ textarea {
 
 .title {
   text-shadow: none!important;
-  color: #E8E6DB!important;
+  color: #00bfa8!important;
 } /*these styles override the following h1, etc styles. So the title remains legible */
 
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -161,7 +161,7 @@ nav a:visited {
 }
 
 .main aside {
-    color: white;
+    color: #000000;
     padding: 0px 5% 10px;
 }
 
@@ -222,10 +222,16 @@ nav a:visited {
         margin-right: 0;
     }
 
-    nav ul li.current {
+    nav ul li.current a {
       border-bottom: 3px solid;
       border-color: #E8E6DB!important;
       color: #E8E6DB;
+    }
+
+    nav ul li a:hover {
+      color: #00bfa8;
+      border-bottom: 3px solid;
+      border-color: #00bfa8;
     }
 
 /* ========================
