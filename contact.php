@@ -70,7 +70,8 @@ $db = connectToDatabase();
                                 '" . $email . "',
                                 '" .  $topic . "',
                                 '" . $question . "',
-                                '" . date('Y-m-d', time()) . "')";
+                                '" . date('Y-m-d H:i:s', time()) . "')";
+
               if ($result = $db->query($query)) {
                 echo "woo bitches";
               }
