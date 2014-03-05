@@ -81,9 +81,13 @@ textarea {
   border-color: #00bfa8;
 }
 
+.gallery {
+  padding: 0;
+}
+
 .gallery li {
   display: inline-block;
-  width: 32%;
+  width: 95%;
   margin: .25em;
 }
 .lineup {
@@ -282,10 +286,6 @@ img {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav {
-      ;
-    }
-
     nav a {
         float: left;
         width: 27%;
@@ -309,6 +309,10 @@ img {
     #map_canvas {
             max-width: 100%;
             height: 400px;
+    }
+
+    .gallery li {
+      width: 48%;
     }
 
 /* ========================
@@ -383,6 +387,10 @@ img {
     .main aside {
         float: right;
         width: 28%;
+    }
+
+    .gallery li {
+      width: 32%;
     }
 }
 
