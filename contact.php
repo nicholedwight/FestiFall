@@ -71,7 +71,12 @@ $db = connectToDatabase();
                                 '" .  $topic . "',
                                 '" . $question . "',
                                 '" . date('Y-m-d', time()) . "')";
-
+              if ($result = $db->query($query)) {
+                echo "woo bitches";
+              }
+              else {
+                echo "boo, you whore"; // there was an SQL error if this happened
+              }
             }
           ?>
           <form id="contact_form" method="POST">
