@@ -93,7 +93,6 @@ textarea {
 }
 
 
-
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
@@ -265,6 +264,11 @@ img {
   max-width: 100%;
 }
 
+#survival {
+  margin: 0 auto;
+  float: none;
+
+}
 
 
 
