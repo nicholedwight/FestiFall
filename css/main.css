@@ -10,14 +10,14 @@ textarea {
     color: #222;
 }
 
-.title {
-  text-shadow: none!important;
-  color: #00bfa8!important;
+.title a {
+  text-shadow: none;
+  color: #00bfa8;
 } /*these styles override the following h1, etc styles. So the title remains legible */
 
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-color: #000!important;
-text-shadow: 0 1px 0 #f0f0f0!important;
+color: #000;
+text-shadow: 0 1px 0 #f0f0f0;
 font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -112,9 +112,6 @@ body {
    background: #444444;
 }
 
-.title {
-    color: white;
-}
 
 /* ==============
     MOBILE: Menu
@@ -182,10 +179,43 @@ nav a:visited {
    Author's custom styles
    ========================================================================== */
 
+.newsbox {
+  margin-bottom: 35px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
 
+header a, header a:visited {
+  text-decoration: none;
+}
 
+article a, article a:visited {
+  color: inherit;
+}
 
+button.submit:hover {
+    cursor: pointer;
+    opacity: .85;
+}
 
+button.submit {
+    background-color: #00bfa8;
+    border: 0;
+    border-radius: 0.5em;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+aside a, aside a:visited, button a, button a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
 
 
