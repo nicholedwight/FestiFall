@@ -1,4 +1,5 @@
 <?php
+
 require_once( './dbconnect.php');
 $db = connectToDatabase();
 ?>
@@ -59,7 +60,19 @@ $db = connectToDatabase();
       <article>
         <header>
           <?php
+            if ($_POST) {
+              $name = $_POST['name'];
+              $email = $_POST['email'];
+              $topic = $_POST['topic'];
+              $question = $_POST['question'];
+              $query = "INSERT INTO `qa` (`name`, `email`, `topic`, `question`, `date`)
+                        VALUES ('" . $name . "',
+                                '" . $email . "',
+                                '" .  $topic . "',
+                                '" . $question . "',
+                                '" . date('Y-m-d', time()) . "')";
 
+            }
           ?>
           <form id="contact_form" method="POST">
             <p>Thank you for you interest in FestiFall Music Festival! Please fill out the form and an event organiser will be in touch with you shortly.</p>
