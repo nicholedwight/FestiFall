@@ -66,10 +66,10 @@ $db = connectToDatabase();
             <p>Fields marked with * are required.</p>
             <div>
               <div>
-                <label for="first_name">First Name*</label>
-                <span id="first_name_error" class="error"></span>
+                <label for="name">Name*</label>
+                <span id="name_error" class="error"></span>
                 <div class="clearfix"></div>
-                <input type="text" class="form-control" name="first_name" value="" id="first_name">
+                <input type="text" class="form-control" name="name" value="" id="name">
               </div>
             </div>
             <div>
