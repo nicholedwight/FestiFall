@@ -85,7 +85,7 @@ $db = connectToDatabase();
                 <label for="topic">Topic*</label>
                 <span id="topic_error" class="error"></span>
                 <div class="clearfix"></div>
-                <select id="topic" class="col-md-12" name="general_topic">
+                <select id="topic" class="col-md-12" name="topic">
                   <option>Change Shipping Address</option>
                   <option>Payment Issue</option>
                   <option>General Festival Question</option>
