@@ -12,7 +12,6 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="css/lightbox.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -33,7 +32,7 @@
                         <li><a href="news.html">News</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="tickets.html">Tickets</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
+                        <li class="current"><a href="contact.php">Contact Us</a></li>
                     </ul>
                 </nav>
             </header>
@@ -43,35 +42,55 @@
             <div class="main wrapper clearfix">
 
                 <article>
-                <div class="newsbox">
-                  <h2>FestiFall Survival Guide</h2>
-                  <p>With FestiFall a few months down the line, we're sure you're getting excited and making travel plans to get here. For seasoned pros you’ll know the drill. But for those of you who haven’t been before, take a look at what we advise you bring along to have the best amount of fun.</p>
-                  <strong>Fun hat</strong>
-                  <p>This is the only time of the year where you can wear a ridiculously stupid hat and feel perfectly normal. Make the most of this grand opportunity.</p>
-                  <strong>Camera, disposable</strong>
-                  <p>One of the best parts of a festival is when you're picking up the films the following week, the person behind the counter must be in fits of laughter! Mind you, given the scenery and gorgeous northern lights, bringing a professional grade camera is a bit of a risk!</p>
-                  <strong>Anorak</strong>
-                  <p>The chance of rain is usually pretty high, and if not, keep warm! It is practically the north pole!</p>
-                  <strong>2 pairs of shoes/wellies</strong>
-                  <p>If you've ever been to a festival or campsite, you know you won't be wearing those shoes again. The festival site is on mother nature, there will be mud, and lots of it!</p>
-                  <strong>Snacks</strong>
-                  <p>Need we say more? There will be kiosks and venues stationed around selling food and refreshments, but nothing is better than a snack-feast when you've spent the day running around FestiFall.</p>
-                </div>
-              </article>
-              <aside class="newsbox">
-                <div id="mailinglist">
-				<h1>Mailing List</h1>
-				<h4>Join Us Now</h4>
-          <form action="#" id="Form" method="post">
-					<input type="text" name="username" id="Name" placeholder="Full Name" />
+                    <header>
 
-					<input type="text" name="email" id="Email" placeholder="Your Email" /><br>
+<form id="contact_form" method="POST" action="#">
+  <p>Thank you for you interest in FestiFall Music Festival! Please fill out the form and an event organiser will be in touch with you shortly.</p>
+  <p>Fields marked with * are required.</p>
+        <div>
+            <div>
+                <label for="first_name">First Name*</label>
+                <span id="first_name_error" class="error"></span>
+                <div class="clearfix"></div>
+                <input type="text" class="form-control" name="first_name" value="" id="first_name">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="email">Email*</label>
+                <span id="email_error" class="error"></span>
+                <div class="clearfix"></div>
+                <input type="text" class="form-control" name="email" value="" id="email">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="topic">Topic*</label>
+                <span id="topic_error" class="error"></span>
+                <div class="clearfix"></div>
+                <select id="topic" class="col-md-12" name="general_topic">
+                    <option>Change Shipping Address</option>
+                    <option>Payment Issue</option>
+                    <option>General Festival Question</option>
+                    <option>Talent, Vendor, or Sponsorship Inquiry</option>
+                    <option>Festival Ticket or Upgrade</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="question">Message</label>
+                <span id="question_error" class="error"></span>
+                <div class="clearfix"></div>
+                <textarea name="question" class="form-control" rows="6"></textarea>
+            </div>
+        </div>
+        <br/>
+        <button type="submit" class="submit">Submit</button>
+</form>
+                    </header>
 
-					<button type="submit" class="submit"><a href="response.html">Submit</a> </button>
-				  </form>
-      </div>
-
-              </aside>
 
             </div> <!-- #main -->
         </div> <!-- #main-container -->
@@ -82,9 +101,6 @@
             </footer>
         </div>
 
-
-
-<!--These are scripts that came with the html5 boilerplate-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
