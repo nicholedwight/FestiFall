@@ -16,15 +16,20 @@ textarea {
 } /*these styles override the following h1, etc styles. So the title remains legible */
 
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-color: #000;
-text-shadow: 0 1px 0 #f0f0f0;
-font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  text-shadow: 0 1px 0 #f0f0f0;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 body {
     font-size: 1em;
     line-height: 1.4;
     color: #000000;
+}
+
+p {
+  font-family: "Lato", "HelveticaNeue", Helvetica, sans-serif;
 }
 
 ::-moz-selection {
@@ -226,10 +231,6 @@ aside a, aside a:visited, button a, button a:visited {
         height: 400px;
 }
 
-h2 {
-  text-align: center:
-}
-
 section ul {
   list-style: none;
   text-align: center;
@@ -256,6 +257,10 @@ section ul li {
 }
 
 
+.center {
+  text-align: center;
+}
+
 
 
 
@@ -271,20 +276,16 @@ section ul li {
     INTERMEDIATE: Menu
    ==================== */
 
+    nav {
+      ;
+    }
+
     nav a {
         float: left;
         width: 27%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
     }
 
     nav ul li.current a {
@@ -353,7 +354,7 @@ section ul li {
     }
 
     nav ul li a {
-      width: 100px;
+      width: 90px;
       color: #E8E6DB;
       padding: 5px 0px 5px 0px;
       position: relative;
