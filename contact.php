@@ -97,7 +97,7 @@ $db = connectToDatabase();
             </div>
             <div>
               <div>
-                <label for="question">Message</label>
+                <label for="question">Question</label>
                 <span id="question_error" class="error"></span>
                 <div class="clearfix"></div>
                 <textarea name="question" class="form-control" rows="6"></textarea>
