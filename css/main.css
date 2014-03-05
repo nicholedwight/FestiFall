@@ -188,6 +188,10 @@ nav a:visited {
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
+#hotels a {
+  color: #00bfa8;
+}
+
 header a, header a:visited {
   text-decoration: none;
 }
@@ -214,11 +218,28 @@ button.submit {
 
 aside a, aside a:visited, button a, button a:visited {
   text-decoration: none;
-  color: #FFFFFF;
+  color: inherit;
 }
 
+#map_canvas {
+        width: 500px;
+        height: 400px;
+}
 
+section ul {
+  list-style: none;
+  text-align: center;
+}
 
+.headshot {
+  margin-bottom: 35px;
+  padding: 20px;
+  width: 200px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
 
 
 
