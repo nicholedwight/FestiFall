@@ -226,9 +226,23 @@ aside a, aside a:visited, button a, button a:visited {
         height: 400px;
 }
 
+h2 {
+  text-align: center:
+}
+
 section ul {
   list-style: none;
   text-align: center;
+  height: inherit;
+  margin: 0px;
+  padding: 10px 0px;
+  overflow: hidden;
+
+}
+
+section ul li {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .headshot {
