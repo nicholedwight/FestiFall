@@ -207,8 +207,9 @@ button.submit {
   border-radius: 0.5em;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 14px;
-  padding: .5em 1em;
+  font-size: 26px;
+  margin-top: 10px;
+  padding: 1em 2em;
   text-align: center;
 }
 
@@ -298,6 +299,16 @@ img {
   margin: 0 auto;
   float: none;
 } /*The boilerplate came with set css styles, one was to have articles floated to the left, this undoes that for this specific article*/
+
+#tickets img {
+  margin: 40px;
+}
+
+#formarticle {
+  float: none;
+  margin: 0 auto;
+  margin-top: 80px;
+}
 
 footer a {
   color: #E8E6DB;

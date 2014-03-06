@@ -56,7 +56,8 @@ $db = connectToDatabase();
 
   <div class="main-container">
     <div class="main wrapper clearfix">
-      <article>
+      <h1>Contact Us</h1>
+      <article id="formarticle" class="newsbox">
         <header>
           <?php
             if ($_POST) {
@@ -79,6 +80,7 @@ $db = connectToDatabase();
               }
             }
           ?>
+
           <form id="contact_form" method="POST">
             <p>Thank you for you interest in FestiFall Music Festival! Please fill out the form and an event organiser will be in touch with you shortly.</p>
             <p>Fields marked with * are required.</p>
