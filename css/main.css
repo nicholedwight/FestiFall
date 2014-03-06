@@ -102,27 +102,24 @@ body {
     MOBILE: Menu
    ============== */
 
-nav ul {
-    margin: 0;
-    padding: 0;
+.nav-primary ul {
+   padding: 0; /*centers the nav, it was slightly pushed to the right*/
+}
+.nav-primary li {
+   font-size: 1.8em;
+   border-bottom: 1px solid #eee;
+   text-align: center;
+}
+.nav-primary li:last-child {
+   border-bottom: 0;
+}
+.nav-primary a {
+   display: block;
+   padding: .5em .8em;
+   text-decoration: none;
+   color: #E8E6DB;
 }
 
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: #E8E6DB;
-}
-
-nav a:hover,
-nav a:visited {
-    color: #E8E6DB;
-}
 
 
 /* ==============
@@ -290,25 +287,57 @@ img {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+header.wrapper {
+  margin: 0;
+  width: 100%;
+}
+
+
+.nav-primary ul {
+   float: left;
+   clear: both;
+}
+.nav-primary li {
+   float: left;
+   font-size: inherit;
+   border-bottom: 0;
+}
+.nav-primary a {
+   display: block;
+   padding: 15px 4px;
+   text-decoration: none;
+   color: #E8E6DB;
+}
+.nav-primary a:hover {
+   background-color: #inherit;
+}
 
     nav a {
-        float: left;
-        width: 27%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
+        display: block;
+        margin-bottom: 10px;
+        padding: 15px 0;
+
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+
+        color: #E8E6DB;
     }
 
-    nav ul li.current a {
-      border-bottom: 3px solid;
-      border-color: #E8E6DB!important;
-      color: #E8E6DB;
+    nav ul {
+        margin: 0;
+        padding: 0;
     }
 
-    nav ul li a:hover {
-      color: #00bfa8;
-      border-bottom: 3px solid;
-      border-color: #00bfa8;
+    nav {
+      height: 100px;
+    }
+
+    nav a:visited {
+        color: #E8E6DB;
     }
 
     #map_canvas {
@@ -333,11 +362,50 @@ img {
     }
 }
 
+@media only screen and (min-width: 510px) {
+
+    header.wrapper {
+      margin: 0 1%;
+    }
+
+    .nav-primary li {
+       padding: 1px;
+    }
+
+}
+
+@media only screen and (min-width: 650px) {
+
+    header.wrapper {
+      width: 90%;
+    }
+
+    .nav-primary li {
+      padding: 7px;
+    }
+
+    .nav-primary li.current a {
+      border-bottom: 3px solid;
+      border-color: #E8E6DB!important;
+      color: #E8E6DB;
+    }
+
+    nav ul li a:hover {
+      color: #00bfa8;
+      border-bottom: 3px solid;
+      border-color: #00bfa8;
+    }
+}
+
 @media only screen and (min-width: 768px) {
 
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
+
+    header.wrapper {
+      width: 98%;
+    }
 
     .header-container,
     .main aside {
@@ -358,6 +426,7 @@ img {
         float: left;
     }
 
+
     nav {
         float: right;
         font-size: 13px;
@@ -369,17 +438,42 @@ img {
 
     nav ul li {
       display: inline-block;
-      height: 30px;
+      height: 25px;
       text-align: center;
+      padding: 5px;
     }
 
     nav ul li a {
       width: 90px;
       color: #E8E6DB;
-      padding: 5px 0px 5px 0px;
+      padding: 0;
       position: relative;
     }
 
+    nav ul li.current a {
+      border-bottom: 3px solid;
+      border-color: #E8E6DB!important;
+      color: #E8E6DB;
+    }
+
+    nav ul li a:hover {
+      color: #00bfa8;
+      border-bottom: 3px solid;
+      border-color: #00bfa8;
+    }
+
+    nav a:visited {
+        color: #E8E6DB;
+    }
+
+
+    .nav-primary li {
+       padding: 7px 2px
+    }
+
+    .nav-primary a {
+       padding: 6px 0;
+    }
 /* ============
     WIDE: Main
    ============ */
