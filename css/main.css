@@ -131,7 +131,7 @@ body {
 }
 
 .main-container {
-  background: url('../img/bg.jpg')
+  background: url('../img/bg.jpg');
 }  /* Background image taken from http://www.flickr.com/photos/93568255@N05/8510307495/ */
 
 
@@ -291,6 +291,11 @@ img {
 #lineup {
   float: none;
   margin: 0 auto;
+  width: 325px;
+}
+
+#lineup img {
+  padding: 5px 0;
   width: 100%;
 }
 
@@ -310,6 +315,14 @@ img {
   margin-top: 80px;
 }
 
+.main-container-lineup {
+  background: url('../img/bg.jpg');
+  min-height: 700px;
+}  /* Background image taken from http://www.flickr.com/photos/93568255@N05/8510307495/ */
+
+
+
+
 footer a {
   color: #E8E6DB;
 }
@@ -317,6 +330,7 @@ footer a {
 footer span {
   font-size: 18px;
 }
+
 
 /* ==========================================================================
    Media Queries
@@ -431,6 +445,48 @@ header.wrapper {
       border-bottom: 3px solid;
       border-color: #00bfa8;
     }
+
+    #lineup {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    #lineup img {
+      padding: 5px 0;
+      width: 48%;
+    }
+
+    /*The below are styles for the lineup band logos*/
+    #muse {
+      float: left;
+      margin-right: 5px;
+    }
+
+    #killers {
+      float: right;
+      margin-left: 10px;
+      margin-top: 30px;
+    }
+
+    #chvrches {
+      margin: 20px 0;
+      clear: both;
+      float: left;
+    }
+
+    #bastille {
+      margin: 5px 0;
+      float: right;
+    }
+
+    #whitelies {
+        margin: 0 150px;
+    }
+
+    #foofighters {
+        margin: 0 150px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -529,6 +585,51 @@ header.wrapper {
     } /*Final scaling of the gallery images, there's no aesthetic need to scale them further in the maximal width */
 }
 
+@media only screen and (min-width: 840px) {
+
+
+    #lineup {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    #lineup img {
+      padding: 5px 0;
+      width: 28%;
+    }
+
+    /*The below are styles for the lineup band logos*/
+    #muse {
+      float: left;
+      margin: 30px 0 0 100px;
+    }
+
+    #killers {
+      float: left;
+      margin-left: 10px;
+      margin-top: 60px;
+    }
+
+    #chvrches {
+      margin: 60px 0 0 180px;
+    }
+
+    #bastille {
+      margin: -95px 25px 0 0;
+      float: right;
+    }
+
+    #whitelies {
+        margin: 10px 0 0 70px;
+    }
+
+    #foofighters {
+        margin: 0 0 0 350px;
+    }
+
+}
+
 
 @media only screen and (min-width: 1140px) {
 
@@ -539,6 +640,18 @@ header.wrapper {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+
+    #bastille {
+      margin: -120px 0 0 0;
+    }
+
+    #killers {
+      margin-left: 20px;
+    }
+
+    #foofighters {
+      margin: 0 0 0 400px;
     }
 }
 
