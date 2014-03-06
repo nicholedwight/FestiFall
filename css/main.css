@@ -333,7 +333,7 @@ header.wrapper {
     }
 
     nav {
-      height: 100px;
+      height: 72px;
     }
 
     nav a:visited {
@@ -375,10 +375,6 @@ header.wrapper {
 }
 
 @media only screen and (min-width: 650px) {
-
-    header.wrapper {
-      width: 90%;
-    }
 
     .nav-primary li {
       padding: 7px;
