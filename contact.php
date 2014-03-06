@@ -134,7 +134,7 @@ $db = connectToDatabase();
 
   <div class="footer-container">
     <footer class="wrapper">
-      <h3>footer</h3>
+      <p><strong><span>© FestiFall</span><strong></p>
     </footer>
   </div>
 

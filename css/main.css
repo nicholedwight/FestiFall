@@ -145,8 +145,10 @@ body {
 }
 
 .footer-container footer {
-    color: white;
+    color: #E8E6DB;
     padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
 }
 
 /* ===============
@@ -270,15 +272,19 @@ img {
   width: 100%;
 }
 
-}
-
 #tickets {
   text-align: center;
   margin: 0 auto;
   float: none;
 } /*The boilerplate came with set css styles, one was to have articles floated to the left, this undoes that for this specific article*/
 
+footer a {
+  color: #E8E6DB;
+}
 
+footer span {
+  font-size: 18px;
+}
 
 /* ==========================================================================
    Media Queries
