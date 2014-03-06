@@ -72,10 +72,10 @@ $db = connectToDatabase();
                                 '" . date('Y-m-d H:i:s', time()) . "')";
 
               if ($result = $db->query($query)) {
-                echo "woo bitches";
+                echo "Thanks! Your question has been received successfully!!";
               }
               else {
-                echo "boo, you whore"; // there was an SQL error if this happened
+                echo "Whoops! Sorry, your question got lost in the abyss!"; // there was an SQL error if this happened
               }
             }
           ?>
@@ -125,8 +125,7 @@ $db = connectToDatabase();
             <button type="submit" class="submit">Submit</button>
           </form>
         </header>
-
-
+      </article>
     </div>
     <!-- #main -->
   </div>
@@ -134,7 +133,7 @@ $db = connectToDatabase();
 
   <div class="footer-container">
     <footer class="wrapper">
-      <p><strong><span>© FestiFall</span><strong></p>
+      <strong><span>© FestiFall</span></strong>
     </footer>
   </div>
 

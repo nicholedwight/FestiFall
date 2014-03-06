@@ -200,6 +200,27 @@ button.submit {
     text-align: center;
 }
 
+/*The below .buttona class is the same as the button styling due to the face the button element and anchor element cannot be childs of each other*/
+.buttona {
+  background-color: #00bfa8;
+  border: 0;
+  border-radius: 0.5em;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  padding: .5em 1em;
+  text-align: center;
+}
+
+.buttona:visited {
+  color: #FFFFFF;
+}
+
+.buttona:hover {
+    cursor: pointer;
+    opacity: .85;
+}
+
 aside a, aside a:visited, button a, button a:visited {
   text-decoration: none;
   color: inherit;
