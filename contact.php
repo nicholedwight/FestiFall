@@ -33,7 +33,7 @@ $db = connectToDatabase();
   <div class="header-container">
     <header class="wrapper clearfix">
       <h1 class="title"><a href="index.html">FestiFall</a></h1>
-      <nav>
+      <nav class="nav-primary">
         <ul>
           <li><a href="index.html">Home</a>
           </li>
@@ -136,6 +136,9 @@ $db = connectToDatabase();
   <div class="footer-container">
     <footer class="wrapper">
       <strong><span>© FestiFall</span></strong>
+      <p>
+        Background Image <a href="http://patio.am/arm/rw_common/themes/Lightning/images/backgrounds/beige-grunge.jpg">Patio</a>
+      </p>
     </footer>
   </div>
 
