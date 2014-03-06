@@ -32,6 +32,10 @@ text: function(event, api) {
     });
 
     return 'Loading...'; // Set some initial text
-}
-}
+    }
+  },
+position: {
+      target: 'mouse' //Loads the popup biography info wherever the mouse is over the iamge
+  }
+
 });
