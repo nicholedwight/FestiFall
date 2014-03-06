@@ -6,9 +6,8 @@ $(document).ready(function() {
 
     // Assign handlers immediately after making the request,
     // and remember the jqXHR object for this request
-    var jqxhr = $.ajax("bibliography.php?name=" + name)
+    var jqxhr = $.ajax("bibliography.php?name=" + name)//This is the query string to tie in the php file.
       .done(function(data) {
-        console.log( data );
       })
       .fail(function() {
         alert( "error" );
@@ -16,13 +15,13 @@ $(document).ready(function() {
   });
 });
 
-
+//Qtip library downloaded from http://qtip2.com
 $('#lineup img').qtip({
 content: {
 text: function(event, api) {
     var name = $(this).attr('id');
     $.ajax({
-        url: "bibliography.php?name=" + name // Use data-url attribute for the URL
+        url: "bibliography.php?name=" + name
     })
     .then(function(content) {
         // Set the tooltip content upon successful retrieval
