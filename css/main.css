@@ -316,8 +316,10 @@ img {
 }
 
 .main-container-lineup {
-  background: url('../img/bg.jpg');
-  min-height: 700px;
+  background-image: url('../img/trees.png'), url('../img/bg.jpg');
+  background-repeat: no-repeat, repeat;
+  background-position: 50% 100%, 0% 0%;  /*multiple backgrounds are tricky. I had to put the trees first for some reason, they wouldn't appear if the texture background was listed first. Then adjusting the repetitions and the positioning */
+  min-height: 1000px;
 }  /* Background image taken from http://www.flickr.com/photos/93568255@N05/8510307495/ */
 
 
@@ -510,6 +512,10 @@ header.wrapper {
       min-height: 1000px;
     }
 
+    .main-container-lineup {
+      min-height: 850px;
+    }
+
 /* ============
     WIDE: Menu
    ============ */
@@ -587,6 +593,9 @@ header.wrapper {
 
 @media only screen and (min-width: 840px) {
 
+    .main-container-lineup {
+      min-height: 700px;
+    }
 
     #lineup {
       float: none;
