@@ -70,7 +70,7 @@ $db = connectToDatabase();
                                 '" . $email . "',
                                 '" .  $topic . "',
                                 '" . $question . "',
-                                '" . date('Y-m-d H:i:s', time()) . "')";
+                                '" . date('Y-m-d H:i:s', time()) . "')"; //Inserts the user input into the correct sections of the MYSQL table in the database.
 
               if ($result = $db->query($query)) {
                 echo "Thanks! Your question has been received successfully!!";
@@ -124,7 +124,7 @@ $db = connectToDatabase();
               </div>
             </div>
             <br/>
-            <button type="submit" class="submit">Submit</button>
+            <button type="submit" class="submit">Submit</button> <!-- this submits the information given into a MYSQL table on phpmyadmin.-->
           </form>
         </header>
       </article>

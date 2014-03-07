@@ -11,3 +11,6 @@ function connectToDatabase() {
   }
   else return $db;
 }
+?>
+
+<!-- This page sets up the connection to the database when I'm both home, locally, and when I'm working from the uni servers.-->
