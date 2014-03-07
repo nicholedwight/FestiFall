@@ -1,20 +1,3 @@
-$(document).ready(function() {
-
-  $('#lineup img').mouseenter(function() {
-
-    var name = $(this).attr('id')
-
-    // Assign handlers immediately after making the request,
-    // and remember the jqXHR object for this request
-    var jqxhr = $.ajax("bibliography.php?name=" + name)//This is the query string to tie in the php file.
-      .done(function(data) {
-      })
-      .fail(function() {
-        alert( "error" );
-      });
-  });
-});
-
 //Qtip library downloaded from http://qtip2.com
 $('#lineup img').qtip({
 content: {

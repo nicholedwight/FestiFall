@@ -359,7 +359,7 @@ header.wrapper {
 }
 .nav-primary a {
    display: block;
-   padding: 15px 4px;
+   padding: 15px 3px;
    text-decoration: none;
    color: #E8E6DB;
 }
@@ -426,7 +426,6 @@ header.wrapper {
     .nav-primary li {
        padding: 1px;
     }
-
 }
 
 @media only screen and (min-width: 650px) {
@@ -592,9 +591,6 @@ header.wrapper {
 
 @media only screen and (min-width: 840px) {
 
-    .main-container-lineup {
-      min-height: 700px;
-    }
 
     #lineup {
       float: none;
