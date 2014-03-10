@@ -38,7 +38,7 @@ $db = connectToDatabase();
         <header>
           <?php
             if ($_POST) {
-              $name = mysql_real_escape_string($_POST['name']);
+              $name = mysqli_real_escape_string($db, $_POST['name']);
               $email = $_POST['email'];
               $topic = $_POST['topic'];
               $question = $_POST['question'];
@@ -53,7 +53,8 @@ $db = connectToDatabase();
                 echo "Thanks! Your question has been received successfully!!";
               }
               else {
-                echo "Whoops! Sorry, your question got lost in the abyss!"; // there was an SQL error if this happened
+                echo "Whoops! Sorry, your question got lost in the abyss!";
+				echo $db->error; // there was an SQL error if this happened
               }
             }
           ?>
@@ -65,7 +66,7 @@ $db = connectToDatabase();
               <div>
                 <label for="name">Name*</label>
                 <span id="name_error" class="error"></span>
-                <div class="clearfix"></div>
+                <br>
                 <input type="text" class="form-control" name="name" value="" id="name">
               </div>
             </div>
@@ -73,7 +74,7 @@ $db = connectToDatabase();
               <div>
                 <label for="email">Email*</label>
                 <span id="email_error" class="error"></span>
-                <div class="clearfix"></div>
+                <br>
                 <input type="text" class="form-control" name="email" value="" id="email">
               </div>
             </div>
@@ -81,7 +82,7 @@ $db = connectToDatabase();
               <div>
                 <label for="topic">Topic*</label>
                 <span id="topic_error" class="error"></span>
-                <div class="clearfix"></div>
+                <br>
                 <select id="topic" class="col-md-12" name="topic">
                   <option>Change Shipping Address</option>
                   <option>Payment Issue</option>
@@ -96,8 +97,8 @@ $db = connectToDatabase();
               <div>
                 <label for="question">Question</label>
                 <span id="question_error" class="error"></span>
-                <div class="clearfix"></div>
-                <textarea name="question" class="form-control" rows="6"></textarea>
+                <br>
+                <textarea name="question" id="question" rows="6"></textarea>
               </div>
             </div>
             <br/>
@@ -116,6 +117,7 @@ $db = connectToDatabase();
       <p>
         Background Image <a href="http://patio.am/arm/rw_common/themes/Lightning/images/backgrounds/beige-grunge.jpg">Patio</a>
       </p>
+	  <p><a href="http://www.cems.uwe.ac.uk/w3c-validator/check?uri=http%3A%2F%2Fwww.cems.uwe.ac.uk%2F~a2-dwight%2Fitwpassignment2%2Fcontact.php"><img src="img/html5.png" alt="HTML5 Validation"></a></p> <!--The only error is the X-UA-Compatible meta tag, although this is required for Internet Explorer compatibility -->
     </footer>
   </div>
 

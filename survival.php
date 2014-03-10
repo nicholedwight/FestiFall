@@ -43,6 +43,7 @@
                 <strong><span>© FestiFall</span></strong>
                 <p> Background Image <a href="http://patio.am/arm/rw_common/themes/Lightning/images/backgrounds/beige-grunge.jpg">Patio</a>
                 </p>
+				<p><a href="http://www.cems.uwe.ac.uk/w3c-validator/check?uri=http%3A%2F%2Fwww.cems.uwe.ac.uk%2F~a2-dwight%2Fitwpassignment2%2Fsurvival.php"><img src="img/html5.png" alt="HTML5 Validation"></a></p> <!--The only error is the X-UA-Compatible meta tag, although this is required for Internet Explorer compatibility -->
             </footer>
         </div>
 
