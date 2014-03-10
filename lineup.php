@@ -1,4 +1,5 @@
 <?php include('inc/header.php'); ?>
+<link type="text/css" rel="stylesheet" href="css/jquery.qtip.css" />
             <header class="wrapper clearfix">
                 <h1 class="title"><a href="index.html">FestiFall</a></h1>
                 <nav  class="nav-primary">
@@ -43,6 +44,8 @@
             </footer>
         </div>
 
+
+<script type="text/javascript" src="js/jquery.qtip.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>

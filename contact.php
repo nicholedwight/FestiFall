@@ -1,10 +1,12 @@
+<?php include('inc/header.php'); ?>
+
 <?php
 
 require_once( './dbconnect.php');
 $db = connectToDatabase();
 ?>
 
-<?php include('inc/header.php'); ?>
+
 
     <header class="wrapper clearfix">
       <h1 class="title"><a href="index.html">FestiFall</a></h1>
