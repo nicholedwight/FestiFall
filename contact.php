@@ -38,7 +38,7 @@ $db = connectToDatabase();
         <header>
           <?php
             if ($_POST) {
-              $name = $_POST['name'];
+              $name = mysql_real_escape_string($_POST['name']);
               $email = $_POST['email'];
               $topic = $_POST['topic'];
               $question = $_POST['question'];
