@@ -14,7 +14,7 @@ text: function(event, api) {
         api.set('content.text', status + ': ' + error);
     });
 
-    return 'Loading...'; // Set some initial text
+    return 'Loading...'; 
     }
   },
 position: {

@@ -20,7 +20,7 @@
   <script src="js/jquery-1.10.2.min.js"></script>
   <script src="js/lightbox-2.6.min.js"></script>
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
- 
+
 </head>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
   <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->

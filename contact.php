@@ -38,7 +38,7 @@ $db = connectToDatabase();
         <header>
           <?php
             if ($_POST) {
-              $name = mysqli_real_escape_string($db, $_POST['name']);
+              $name = mysqli_real_escape_string($db, $_POST['name']);//Prevents MySQL injections
               $email = $_POST['email'];
               $topic = $_POST['topic'];
               $question = $_POST['question'];
@@ -127,19 +127,7 @@ $db = connectToDatabase();
   </script>
 
   <script src="js/main.js"></script>
-
-  <script>
-    var _gaq = [
-      ['_setAccount', 'UA-XXXXX-X'],
-      ['_trackPageview']
-    ];
-    (function(d, t) {
-      var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-      g.src = '//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g, s)
-    }(document, 'script'));
-  </script>
+<!-- Deleted the google analytics script here that came with the boilerplate-->
 </body>
 
 </html>
